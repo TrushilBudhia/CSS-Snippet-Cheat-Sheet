@@ -2,24 +2,25 @@
 <html>
 
 <head>
-    <title>CSS Box Styling</title>
+    <title>CSS Snippet Cheat Sheet</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Header START -->
     <header>
-        <h1>CSS Snippet Cheatsheet</h1>
-        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+        <h1>CSS Snippet Cheat Sheet</h1>
+        <p>Ever have trouble recalling the exact syntax for your favourite CSS code? Find snippets of some CSS code on this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
     </header>
+    <!-- Header END -->
 
-    <!-- Main -->
+    <!-- Main START -->
     <main>
-        <!-- Article -->
-        <article>
-            <h3>Flexbox Row</h3>
+        <!-- Code Card Articles START -->
+        <article class="code-card">
+            <h3 class="card-header">Flexbox Row</h3>
             <p>Use these three properties to create a Flexbox row layout</p>
             <pre class="code-snippet"><code>.row {
     display: flex;
@@ -28,63 +29,68 @@
 }           </code></pre>
         </article>
 
-        <article>
-            <h3>Flexbox Row</h3>
-            <p>Use these three properties to create a Flexbox row layout</p>
-            <pre class="code-snippet"><code>.row {
+        <article class="code-card">
+            <h3 class="card-header">Flexbox Column</h3>
+            <p>Use this to create a Flexbox column layout</p>
+            <pre class="code-snippet"><code>.column {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-direction: column;
 }           </code></pre>
         </article>
 
-        <article>
-            <h3>Flexbox Row</h3>
-            <p>Use these three properties to create a Flexbox row layout</p>
-            <pre class="code-snippet"><code>.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+        <article class="code-card">
+            <h3 class="card-header">CSS Grid Layout</h3>
+            <p>Build a 12-column layout using CSS Grid</p>
+            <pre class="code-snippet"><code>.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, lfr);
 }           </code></pre>
         </article>
 
-        <article>
-            <h3>Flexbox Row</h3>
-            <p>Use these three properties to create a Flexbox row layout</p>
-            <pre class="code-snippet"><code>.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+        <article class="code-card">
+            <h3 class="card-header">Linear Gradients</h3>
+            <p>This will create a background linear gradiant from top to bottom</p>
+            <pre class="code-snippet"><code>.linear-gradient-background {
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%)
+    );
 }           </code></pre>
         </article>
 
-        <article>
-            <h3>Flexbox Row</h3>
-            <p>Use these three properties to create a Flexbox row layout</p>
-            <pre class="code-snippet"><code>.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+        <article class="code-card">
+            <h3 class="card-header">Box Transition Glow</h3>
+            <p>Use box transition and box shadow to glow on hover</p>
+            <pre class="code-snippet"><code>.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover, 
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1)
 }           </code></pre>
         </article>
 
-        <article>
-            <h3>Flexbox Row</h3>
-            <p>Use these three properties to create a Flexbox row layout</p>
-            <pre class="code-snippet"><code>.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+        <article class="code-card">
+            <h3 class="card-header">CSS Variables</h3>
+            <p>Use CSS variables to assign a value to a custom property which you can call in the stylesheet by using the CSS variable</p>
+            <pre class="code-snippet"><code>:root {
+    --main-green: #17a76b;
+}
+.nav {
+    background: var(--main-green);
 }           </code></pre>
         </article>
+        <!-- Code Card Articles END -->
     </main>
+    <!-- Main END -->
 
-    <!-- Footer -->
+    <!-- Footer START -->
     <footer>
-
-
+        <p>© Created by Trushil</p>
     </footer>
+    <!-- Footer END -->
 </body>
 
 </html>

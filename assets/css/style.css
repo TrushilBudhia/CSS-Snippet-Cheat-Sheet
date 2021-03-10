@@ -1,7 +1,125 @@
+/* Setting a custom properties and specifying its value in the root */
 :root {
     --background-dark: #303030;
+    --font-header-color: #00cc00;
+    --font-text-color: #fff;
 }
 
+/* Universal selector styling */
+* {
+    box-sizing: border-box;
+  }
+
+/* Element styling */
 body {
     background-color: var(--background-dark);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
 }
+
+p {
+    color: var(--font-text-color);
+    margin: 8px;
+}
+
+/* Header section styling */
+header h1 {
+    color: var(--font-header-color);
+    margin: 8px;
+    text-align: center;
+}
+
+header p {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 75%;
+}
+
+/* Main section styling */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+article {
+    border: 2px dashed #fff;
+    margin: 20px 0px;
+    padding: 10px 10px 0px 10px;
+    width: 100%;                /* For mobile phones: */
+}
+
+article h3 {
+    background: var(--background-dark);
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color: var(--font-header-color);
+    font-size: 150%;
+    padding: 5px;
+    position: relative;
+    top: -50px;
+}
+
+article p {
+    margin: -50px 0 0 0;
+}
+
+pre {
+    background-image: linear-gradient(#007600, #00cc00);
+    border-radius: 5px;
+    color: var(--font-text-color);
+    display: block;
+    padding: 10px;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+pre code {
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace; 
+    -moz-user-select: all;
+    -webkit-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+}
+
+/* Class styling */
+.code-card, .card-header {
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover, .code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1)
+}           
+
+/* Footer section styling */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: var(--font-header-color);
+}
+
+
+/* Media Queries */
+/* For tablets: At 768px */
+@media screen and (min-width: 768px) {
+    article {
+        width: 48%;
+    }
+}
+
+/* For desktop: At 992px */
+@media screen and (min-width: 992px) {
+    article {
+        width: 31%;
+    }
+}
+
