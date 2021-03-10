@@ -13,5 +13,6 @@ The following image shows the web application's appearance and functionality:
 ## Link
 
 The link to the deployed application:
+
 CSS Snippet Cheat Sheet: https://trushilbudhia.github.io/CSS-Snippet-Cheat-Sheet/
 
